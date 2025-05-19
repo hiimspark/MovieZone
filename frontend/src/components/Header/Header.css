@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo span {
+    margin-left: 8px;
+    background: linear-gradient(90deg, #d93cf9, #7332ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .nav-item.active {
+    border-bottom: 2px solid #994cff;
+  }
+  
+  .nav-item.logout {
+    color: #994cff;;
+  }
+  
+  .burger {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burger span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .burger span:nth-child(1) {
+    top: 0;
+  }
+  
+  .burger span:nth-child(2) {
+    top: 9px;
+  }
+  
+  .burger span:nth-child(3) {
+    top: 18px;
+  }
+  
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  
+  /* Мобильная адаптация */
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+  
+    .nav.open {
+      transform: scaleY(1);
+    }
+  }
+  

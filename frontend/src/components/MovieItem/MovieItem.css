@@ -1,0 +1,36 @@
+.movieitem-poster {
+  width:300px;
+  height:450px;
+  object-fit: cover;
+}
+
+.movieitem-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movieitem-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.movieitem-info p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.movieitem-rating {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.movieitem-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}

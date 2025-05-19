@@ -1,0 +1,60 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content h1 span {
+    background: linear-gradient(270deg, #ffcc00, #ff0066, #6600ff, #00ccff);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 8s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #d93cf9, #7332ff);
+    background-size: 150%;
+    background-position: left;
+    color: #1e1e2f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-position 0.5s ease;
+  }
+  
+  .hero-button:hover {
+    background-position: right;
+  }
+  

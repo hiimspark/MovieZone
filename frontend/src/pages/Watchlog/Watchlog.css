@@ -1,0 +1,63 @@
+.watchlog {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+  
+.watchlog-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+    
+.watchlog-content p {
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.watchlist-item {
+  background: linear-gradient(90deg, #8a31ff 35%, #6b04cb 100%);
+  min-width: 300px;
+  min-height:200px;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.327);
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.watchlogmovie-item:hover {
+  transform: scale(1.05);
+}
+
+.watchlog-skeleton {
+  background: linear-gradient(90deg, #333 35%, #252525 100%);
+  min-width: 300px;
+  min-height:733px;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease forwards;
+}

@@ -1,0 +1,70 @@
+.watchlist-info {
+  padding: 10px;
+}
+
+.watchlist-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.watchlist-info p, label {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.buttons-block{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.episode-button{
+    padding: 10px;
+    background: #252525;
+    border-radius: 10px;
+}
+
+.watchlist-poster{  
+  width:312px;
+  height:468px;
+  object-fit: cover;
+}
+
+.watchlist-select {
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  background-color: #252525;
+  color: #ccc;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.watchlist-select:hover, .watchlist-select:focus {
+  background-color: #333;
+  border-color: #b780ff;
+  outline: none;
+}
+
+.watchlist-button {
+  padding: 10px 20px;
+  background-color: #252525;
+  color: #ccc;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  user-select: none;
+}
+
+.watchlist-button:hover {
+  background-color: #b780ff;
+  color: #252525;
+}
